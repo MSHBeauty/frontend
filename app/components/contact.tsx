@@ -5,7 +5,7 @@ export default function Contact() {
 		<section className="py-16 md:py-24 bg-background">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="grid md:grid-cols-2 gap-12 items-center">
-					{/* Left Image */}
+					{/* Left Image 12 */}
 					<div className="relative hidden md:block">
 						<div className="absolute -left-10 top-1/2 -translate-y-1/2 w-80 h-80 bg-primary rounded-full -z-0"></div>
 						<div className="relative z-10 rounded-full overflow-hidden w-72 h-72 mx-auto">
