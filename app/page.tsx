@@ -18,6 +18,7 @@ export default function Home() {
 			<Contact />
 			<FAQ />
 			<Footer />
+			{/* end */}
 		</main>
 	);
 }
