@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export default function Header() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -11,10 +12,13 @@ export default function Header() {
 			<nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 				<div className="flex justify-between items-center">
 					<div className="flex items-center gap-2">
-						<div className="w-8 h-8 bg-primary rounded-full"></div>
-						<span className="text-2xl font-bold text-foreground">
-							Logo
-						</span>
+						<Image
+							width={200}
+							height={200}
+							src="/icon.svg"
+							alt="logo"
+							className="w-15 h-15"
+						/>
 					</div>
 
 					{/* Desktop Menu */}
