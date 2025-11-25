@@ -81,9 +81,9 @@ export default function Services() {
 									<h4 className="text-foreground font-medium group-hover:text-primary transition-colors text-balance">
 										{service.name}
 									</h4>
-									<span className="font-bold text-primary text-lg whitespace-nowrap">
+									{/* <span className="font-bold text-primary text-lg whitespace-nowrap">
 										{service.price}
-									</span>
+									</span> */}
 								</div>
 							</div>
 						))}
