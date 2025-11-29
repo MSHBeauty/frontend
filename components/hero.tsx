@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Hero() {
 	return (
 		<section className="relative py-12 md:py-20 overflow-hidden">
@@ -21,19 +23,25 @@ export default function Hero() {
 						</h1>
 
 						<p className="text-lg text-foreground/70 mb-8 leading-relaxed max-w-lg">
-							В Luxury's Dream наш премиум-уход за кожей поможет
-							вам стать еще красивее, подчеркнуть лучшее в вашей
-							коже и оставить вас уверенными и сияющими.
+							В Msh Beauty наш премиум-уход за кожей поможет вам
+							стать еще красивее, подчеркнуть лучшее в вашей коже
+							и оставить вас уверенными и сияющими.
 						</p>
 
 						<div className="flex flex-col sm:flex-row gap-4 items-start">
-							<button className="bg-primary text-primary-foreground px-8 py-3 rounded-full font-semibold hover:bg-primary/90 transition inline-flex items-center gap-2">
+							<Link
+								href="#contact"
+								className="bg-primary text-primary-foreground px-8 py-3 rounded-full font-semibold hover:bg-primary/90 transition inline-flex items-center gap-2"
+							>
 								Записаться на сеанс
 								<span className="text-xl">→</span>
-							</button>
-							<button className="text-primary font-semibold hover:text-primary/80 transition">
+							</Link>
+							<Link
+								href="#services"
+								className="text-primary font-semibold hover:text-primary/80 transition"
+							>
 								Изучить услуги →
-							</button>
+							</Link>
 						</div>
 					</div>
 

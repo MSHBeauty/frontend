@@ -1,8 +1,10 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Contact() {
 	return (
-		<section className="py-16 md:py-24 bg-background">
+		<section className="py-16 md:py-24 bg-background" id="contact">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="grid md:grid-cols-2 gap-12 items-center">
 					{/* Left Image */}
@@ -10,7 +12,7 @@ export default function Contact() {
 						<div className="absolute -left-10 top-1/2 -translate-y-1/2 w-80 h-80 bg-primary rounded-full -z-0"></div>
 						<div className="relative z-10 rounded-full overflow-hidden w-72 h-72 mx-auto">
 							<img
-								src="/beauty-woman-portrait-spa.jpg"
+								src="/owner.jpg"
 								alt="Contact"
 								className="w-full h-full object-cover"
 							/>
@@ -36,7 +38,7 @@ export default function Contact() {
 							</p>
 
 							<a
-								href="https://instagram.com/"
+								href="https://www.instagram.com/shaxlo_beauty_studio_ny"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="flex items-center gap-4 group"
@@ -53,20 +55,35 @@ export default function Contact() {
 								</div>
 
 								<span className="text-xl font-semibold text-foreground group-hover:underline">
-									Подпишитесь и запишитесь в Instagram
+									Shaxlo beauty studio NY
 								</span>
 							</a>
 						</div>
 
 						<div className="mt-8 pt-8 border-t border-border space-y-2 text-sm">
 							<p>
-								<strong>Сомервилль, Нью-Йорк 210 USSP</strong>
+								<strong>
+									1662 Coney Island Avenue Brooklyn New York
+									11230
+								</strong>
+							</p>
+							<p className="text-foreground/70 flex items-center gap-2">
+								<Link
+									href="tel:+9175339999"
+									className="hover:text-primary transition"
+								>
+									+9175339999
+								</Link>{" "}
+								·{" "}
+								<Link
+									href="tel:+9295540000"
+									className="hover:text-primary transition"
+								>
+									+9295540000
+								</Link>
 							</p>
 							<p className="text-foreground/70">
-								+880 012-423-4453 · +880 89 567 57 29
-							</p>
-							<p className="text-foreground/70">
-								hello@luxure.com
+								mshcosmetologyspa@gmail.com
 							</p>
 						</div>
 					</div>

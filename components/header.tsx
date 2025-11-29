@@ -51,7 +51,7 @@ export default function Header() {
 							href="#faq"
 							className="text-foreground hover:text-primary transition"
 						>
-							ЧаВо
+							Вопросы
 						</a>
 					</div>
 

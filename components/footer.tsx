@@ -33,7 +33,7 @@ export default function Footer() {
 						<ul className="space-y-2 text-sm opacity-90">
 							<li>
 								<a
-									href="#"
+									href="#home"
 									className="hover:opacity-100 transition"
 								>
 									Главная
@@ -41,7 +41,7 @@ export default function Footer() {
 							</li>
 							<li>
 								<a
-									href="#"
+									href="#services"
 									className="hover:opacity-100 transition"
 								>
 									Услуги
@@ -49,7 +49,7 @@ export default function Footer() {
 							</li>
 							<li>
 								<a
-									href="#"
+									href="#home"
 									className="hover:opacity-100 transition"
 								>
 									О нас
@@ -57,7 +57,7 @@ export default function Footer() {
 							</li>
 							<li>
 								<a
-									href="#"
+									href="#contact"
 									className="hover:opacity-100 transition"
 								>
 									Контакты
@@ -67,44 +67,6 @@ export default function Footer() {
 					</div>
 
 					{/* Services */}
-					<div>
-						<h4 className="font-bold mb-4">Услуги</h4>
-						<ul className="space-y-2 text-sm opacity-90">
-							<li>
-								<a
-									href="#"
-									className="hover:opacity-100 transition"
-								>
-									Процедуры для лица
-								</a>
-							</li>
-							<li>
-								<a
-									href="#"
-									className="hover:opacity-100 transition"
-								>
-									Массажи
-								</a>
-							</li>
-							<li>
-								<a
-									href="#"
-									className="hover:opacity-100 transition"
-								>
-									Уход за кожей
-								</a>
-							</li>
-							<li>
-								<a
-									href="#"
-									className="hover:opacity-100 transition"
-								>
-									Оздоровление
-								</a>
-							</li>
-						</ul>
-					</div>
-
 					{/* Hours */}
 					<div>
 						<h4 className="font-bold mb-4">Часы работы</h4>
@@ -121,7 +83,7 @@ export default function Footer() {
 				<div className="border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
 					{/* Left */}
 					<div className="text-sm opacity-90">
-						<p>© 2025 Luxurious Care. Все права защищены.</p>
+						<p>© 2025 Msh Beauty. Все права защищены.</p>
 					</div>
 
 					{/* Social Icons */}
