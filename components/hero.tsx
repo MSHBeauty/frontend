@@ -8,30 +8,31 @@ export default function Hero() {
 					{/* Left Content */}
 					<div className="z-10">
 						<div className="inline-block bg-muted px-4 py-2 rounded-full text-sm font-medium text-foreground mb-6">
-							✨ Best for 2024 - Vogue Choice
+							✨ Лучший выбор 2024 года - Выбор Vogue
 						</div>
 
 						<h1 className="text-5xl md:text-6xl font-bold text-foreground leading-tight mb-6">
-							TRANSFORM
+							ПРЕОБРАЗИТЕ
 							<br />
-							YOUR DAY WITH
+							СВОЙ ДЕНЬ С
 							<br />
-							<span className="text-primary">Luxurious</span> CARE
+							<span className="text-primary">РОСКОШНЫМ</span>{" "}
+							УХОДОМ
 						</h1>
 
 						<p className="text-lg text-foreground/70 mb-8 leading-relaxed max-w-lg">
-							At Luxury's Dream, our skin care premium can make
-							beautiful to bring out the best in your skin and
-							leave you feeling confident and radiant.
+							В Luxury's Dream наш премиум-уход за кожей поможет
+							вам стать еще красивее, подчеркнуть лучшее в вашей
+							коже и оставить вас уверенными и сияющими.
 						</p>
 
 						<div className="flex flex-col sm:flex-row gap-4 items-start">
 							<button className="bg-primary text-primary-foreground px-8 py-3 rounded-full font-semibold hover:bg-primary/90 transition inline-flex items-center gap-2">
-								Book Your Session
+								Записаться на сеанс
 								<span className="text-xl">→</span>
 							</button>
 							<button className="text-primary font-semibold hover:text-primary/80 transition">
-								Explore Services →
+								Изучить услуги →
 							</button>
 						</div>
 					</div>

@@ -9,13 +9,14 @@ export default function Pricing() {
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="text-center mb-16">
 					<h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-						PAMPER YOURSELF AT
+						ПОБАЛУЙТЕ СЕБЯ
 						<br />
-						EVERY BUDGET
+						ПРИ ЛЮБОМ БЮДЖЕТЕ
 					</h2>
 					<p className="text-lg text-foreground/70">
-						Our expert team delivers top-tier services using premium
-						products for amazing results.
+						Наша команда экспертов предоставляет первоклассные
+						услуги с использованием премиальных продуктов для
+						достижения потрясающих результатов.
 					</p>
 				</div>
 

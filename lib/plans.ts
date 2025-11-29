@@ -1,49 +1,49 @@
 const pricingPlans = [
 	{
 		id: 1,
-		title: "FACIALS & PEELS", // Заголовок первой карточки
+		title: "ПРОЦЕДУРЫ ДЛЯ ЛИЦА И ПИЛИНГИ", // Заголовок первой карточки
 		price: "$100", // Стартовая цена для крупного шрифта
-		period: "starting from", // Приписка (опционально)
+		period: "от", // Приписка (опционально)
 		isPopular: false, // Обычный стиль (белая карточка)
 		features: [
-			"Facials (3 types) – $100–$300",
-			"Seasonal Facial Peeling – $100",
-			"Carboxy Therapy – $100",
-			"Mandelic Peel – $150",
-			"Yellow Peel – $150",
+			"Процедуры для лица (3 вида) – $100–$300",
+			"Сезонный пилинг для лица – $100",
+			"Карбокситерапия – $100",
+			"Миндальный пилинг – $150",
+			"Желтый пилинг – $150",
 		],
-		buttonText: "Book Facial",
+		buttonText: "Записаться на процедуру для лица",
 	},
 	{
 		id: 2,
-		title: "PREMIUM DEVICES", // Заголовок центральной (розовой) карточки
+		title: "ПРЕМИУМ ОБОРУДОВАНИЕ", // Заголовок центральной (розовой) карточки
 		price: "$250", // Средний чек или стартовая цена
-		period: "starting from",
+		period: "от",
 		isPopular: true, // Флаг для выделения цветом (розовый фон)
 		features: [
-			"Morpheus8 (Face Lift) – $400",
-			"CO2 Laser (Resurfacing) – $500",
-			"Intimate Chair (Emsella) – $300",
-			"Couperose Removal – $250",
-			"Endospheres Therapy – $150",
+			"Morpheus8 (Подтяжка лица) – $400",
+			"CO2 Лазер (Шлифовка кожи) – $500",
+			"Интимное кресло (Emsella) – $300",
+			"Удаление купероза – $250",
+			"Эндосфера-терапия – $150",
 		],
-		buttonText: "Choose Premium",
+		buttonText: "Выбрать Премиум",
 	},
 	{
 		id: 3,
-		title: "LASER & BODY", // Заголовок третьей карточки
+		title: "ЛАЗЕР И ТЕЛО", // Заголовок третьей карточки
 		price: "$100",
-		period: "starting from",
+		period: "от",
 		isPopular: false, // Обычный стиль
 		features: [
-			"Laser Hair Removal – $150",
-			"Carbon Laser Peel – $100",
-			"Fat-Reducing Cavitation – $150",
-			"Teeth Whitening – $100",
-			"Tattoo Removal – from $100",
-			"Papilloma Removal – $10/ea",
+			"Лазерная эпиляция – $150",
+			"Карбоновый пилинг – $100",
+			"Кавитация для уменьшения жира – $150",
+			"Отбеливание зубов – $100",
+			"Удаление татуировок – от $100",
+			"Удаление папиллом – $10/шт",
 		],
-		buttonText: "Book Session",
+		buttonText: "Записаться на сеанс",
 	},
 ];
 

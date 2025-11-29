@@ -27,31 +27,31 @@ export default function Header() {
 							href="#home"
 							className="text-foreground hover:text-primary transition"
 						>
-							Home
+							Главная
 						</a>
 						<a
 							href="#services"
 							className="text-foreground hover:text-primary transition"
 						>
-							Service
+							Услуги
 						</a>
 						<a
 							href="#about"
 							className="text-foreground hover:text-primary transition"
 						>
-							About Us
+							О нас
 						</a>
 						<a
 							href="#blog"
 							className="text-foreground hover:text-primary transition"
 						>
-							Blog
+							Блог
 						</a>
 						<a
 							href="#faq"
 							className="text-foreground hover:text-primary transition"
 						>
-							FAQs
+							ЧаВо
 						</a>
 					</div>
 
@@ -80,31 +80,31 @@ export default function Header() {
 							href="#home"
 							className="block text-foreground hover:text-primary"
 						>
-							Home
+							Главная
 						</a>
 						<a
 							href="#services"
 							className="block text-foreground hover:text-primary"
 						>
-							Service
+							Услуги
 						</a>
 						<a
 							href="#about"
 							className="block text-foreground hover:text-primary"
 						>
-							About Us
+							О нас
 						</a>
 						<a
 							href="#blog"
 							className="block text-foreground hover:text-primary"
 						>
-							Blog
+							Блог
 						</a>
 						<a
 							href="#faq"
 							className="block text-foreground hover:text-primary"
 						>
-							FAQs
+							ЧаВо
 						</a>
 					</div>
 				)}

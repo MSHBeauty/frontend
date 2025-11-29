@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Luxurious Care - Premium Beauty & Skincare",
-  description: "Transform your day with our luxury beauty and skincare services",
+  title: "Люксовый уход - Премиум Красота и Уход за Кожей",
+  description: "Преобразите свой день с нашими роскошными услугами красоты и ухода за кожей",
   generator: "v0.app",
   icons: {
     icon: [
@@ -36,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />

@@ -20,19 +20,19 @@ export default function Contact() {
 					{/* Right Form */}
 					<div>
 						<h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-							GET IN TOUCH WITH
+							СВЯЖИТЕСЬ С НАМИ
 							<br />
-							US TODAY!
+							СЕГОДНЯ!
 						</h2>
 						<p className="text-lg text-foreground/70 mb-8">
-							Our expert team delivers top-tier services using
-							premium products.
+							Наша команда экспертов предоставляет первоклассные
+							услуги с использованием премиальных продуктов.
 						</p>
 
 						<div className="flex flex-col items-start gap-6">
 							<p className="text-lg text-foreground/70">
-								For bookings and inquiries, please reach out to
-								us on Instagram.
+								Для записи и вопросов, пожалуйста, свяжитесь с
+								нами в Instagram.
 							</p>
 
 							<a
@@ -53,14 +53,14 @@ export default function Contact() {
 								</div>
 
 								<span className="text-xl font-semibold text-foreground group-hover:underline">
-									Follow & Book on Instagram
+									Подпишитесь и запишитесь в Instagram
 								</span>
 							</a>
 						</div>
 
 						<div className="mt-8 pt-8 border-t border-border space-y-2 text-sm">
 							<p>
-								<strong>Somerville, NY 210 USSP</strong>
+								<strong>Сомервилль, Нью-Йорк 210 USSP</strong>
 							</p>
 							<p className="text-foreground/70">
 								+880 012-423-4453 · +880 89 567 57 29

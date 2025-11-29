@@ -8,35 +8,35 @@ export default function Services() {
 	const services = [
 		{
 			icon: "✨",
-			title: "Facials & Peelings",
+			title: "Процедуры для лица и пилинги",
 			items: [
-				{ name: "Classic Facial", price: "$100" },
-				{ name: "Deep Cleansing Facial", price: "$200" },
-				{ name: "Anti-Aging Facial", price: "$300" },
-				{ name: "Seasonal Facial Peeling", price: "$100" },
-				{ name: "Carboxy Therapy", price: "$100" },
-				{ name: "Mandelic Peel", price: "$150" },
-				{ name: "Yellow Peel", price: "$150" },
+				{ name: "Классическая процедура для лица", price: "$100" },
+				{ name: "Глубоко очищающая процедура для лица", price: "$200" },
+				{ name: "Антивозрастная процедура для лица", price: "$300" },
+				{ name: "Сезонный пилинг для лица", price: "$100" },
+				{ name: "Карбокситерапия", price: "$100" },
+				{ name: "Миндальный пилинг", price: "$150" },
+				{ name: "Желтый пилинг", price: "$150" },
 			],
 		},
 		{
 			icon: "🔥",
-			title: "Laser Related Treatments",
+			title: "Лазерные процедуры",
 			items: [
-				{ name: "Laser Hair Removal - Full Body", price: "$150" },
+				{ name: "Лазерная эпиляция - Все тело", price: "$150" },
 				{
-					name: "Morpheus8 - Skin Tightening & Face Lift",
+					name: "Morpheus8 - Подтяжка кожи и лица",
 					price: "$400",
 				},
-				{ name: "Endospheres Therapy - Full Body", price: "$150" },
-				{ name: "CO2 Laser - Skin Resurfacing", price: "$500" },
-				{ name: "Intimate Chair - Emsella", price: "$300" },
-				{ name: "Couperose Removal - Full Face", price: "$250" },
-				{ name: "Tattoo Removal - Brows", price: "$100" },
-				{ name: "Carbon Laser Peel", price: "$100" },
-				{ name: "Fat-Reducing Stomach Cavitation", price: "$150" },
-				{ name: "Papilloma Removal", price: "$10" },
-				{ name: "Teeth Whitening", price: "$100" },
+				{ name: "Эндосфера-терапия - Все тело", price: "$150" },
+				{ name: "CO2 Лазер - Шлифовка кожи", price: "$500" },
+				{ name: "Интимное кресло - Emsella", price: "$300" },
+				{ name: "Удаление купероза - Все лицо", price: "$250" },
+				{ name: "Удаление татуировок - Брови", price: "$100" },
+				{ name: "Карбоновый лазерный пилинг", price: "$100" },
+				{ name: "Жироудаляющая кавитация живота", price: "$150" },
+				{ name: "Удаление папиллом", price: "$10" },
+				{ name: "Отбеливание зубов", price: "$100" },
 			],
 		},
 	];
@@ -45,7 +45,7 @@ export default function Services() {
 		<section id="services" className="py-16 md:py-24 bg-background">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12 text-center text-balance">
-					Services & Pricing
+					Услуги и цены
 				</h2>
 
 				<div className="max-w-5xl mx-auto">

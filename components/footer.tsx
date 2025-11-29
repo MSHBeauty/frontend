@@ -21,21 +21,22 @@ export default function Footer() {
 							></div>
 						</div>
 						<p className="text-sm opacity-90">
-							Transform your beauty routine with our premium
-							skincare and wellness services.
+							Преобразите свою рутину красоты с нашими
+							премиальными услугами по уходу за кожей и
+							оздоровлению.
 						</p>
 					</div>
 
 					{/* Quick Links */}
 					<div>
-						<h4 className="font-bold mb-4">Quick Links</h4>
+						<h4 className="font-bold mb-4">Быстрые ссылки</h4>
 						<ul className="space-y-2 text-sm opacity-90">
 							<li>
 								<a
 									href="#"
 									className="hover:opacity-100 transition"
 								>
-									Home
+									Главная
 								</a>
 							</li>
 							<li>
@@ -43,7 +44,7 @@ export default function Footer() {
 									href="#"
 									className="hover:opacity-100 transition"
 								>
-									Services
+									Услуги
 								</a>
 							</li>
 							<li>
@@ -51,7 +52,7 @@ export default function Footer() {
 									href="#"
 									className="hover:opacity-100 transition"
 								>
-									About
+									О нас
 								</a>
 							</li>
 							<li>
@@ -59,7 +60,7 @@ export default function Footer() {
 									href="#"
 									className="hover:opacity-100 transition"
 								>
-									Contact
+									Контакты
 								</a>
 							</li>
 						</ul>
@@ -67,14 +68,14 @@ export default function Footer() {
 
 					{/* Services */}
 					<div>
-						<h4 className="font-bold mb-4">Services</h4>
+						<h4 className="font-bold mb-4">Услуги</h4>
 						<ul className="space-y-2 text-sm opacity-90">
 							<li>
 								<a
 									href="#"
 									className="hover:opacity-100 transition"
 								>
-									Facial Treatments
+									Процедуры для лица
 								</a>
 							</li>
 							<li>
@@ -82,7 +83,7 @@ export default function Footer() {
 									href="#"
 									className="hover:opacity-100 transition"
 								>
-									Massages
+									Массажи
 								</a>
 							</li>
 							<li>
@@ -90,7 +91,7 @@ export default function Footer() {
 									href="#"
 									className="hover:opacity-100 transition"
 								>
-									Skincare
+									Уход за кожей
 								</a>
 							</li>
 							<li>
@@ -98,7 +99,7 @@ export default function Footer() {
 									href="#"
 									className="hover:opacity-100 transition"
 								>
-									Wellness
+									Оздоровление
 								</a>
 							</li>
 						</ul>
@@ -106,12 +107,12 @@ export default function Footer() {
 
 					{/* Hours */}
 					<div>
-						<h4 className="font-bold mb-4">Opening Hours</h4>
+						<h4 className="font-bold mb-4">Часы работы</h4>
 						<ul className="space-y-2 text-sm opacity-90">
-							<li>Monday-Friday: 8 AM - 8 PM</li>
-							<li>Saturday: 9 AM - 7 PM</li>
-							<li>Sunday: 10 AM - 6 PM</li>
-							<li>Closed Holidays</li>
+							<li>Понедельник-Пятница: 8:00 - 20:00</li>
+							<li>Суббота: 9:00 - 19:00</li>
+							<li>Воскресенье: 10:00 - 18:00</li>
+							<li>Выходные дни: Закрыто</li>
 						</ul>
 					</div>
 				</div>
@@ -120,7 +121,7 @@ export default function Footer() {
 				<div className="border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
 					{/* Left */}
 					<div className="text-sm opacity-90">
-						<p>© 2025 Luxurious Care. All rights reserved.</p>
+						<p>© 2025 Luxurious Care. Все права защищены.</p>
 					</div>
 
 					{/* Social Icons */}
