@@ -1,6 +1,6 @@
 "use client";
 
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 export default function Footer() {
 	return (
@@ -71,10 +71,11 @@ export default function Footer() {
 					<div>
 						<h4 className="font-bold mb-4">Часы работы</h4>
 						<ul className="space-y-2 text-sm opacity-90">
-							<li>Понедельник-Пятница: 8:00 - 20:00</li>
-							<li>Суббота: 9:00 - 19:00</li>
-							<li>Воскресенье: 10:00 - 18:00</li>
-							<li>Выходные дни: Закрыто</li>
+							<li>Понедельник-Пятница: 10:00 - 18:00</li>
+							<li>
+								Выходные дни: 10:00 - 18:00 (часы могут
+								меняться)
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -88,18 +89,18 @@ export default function Footer() {
 
 					{/* Social Icons */}
 					<div className="flex gap-4">
-						<a href="#" className="hover:opacity-100 transition">
+						{/* <a href="#" className="hover:opacity-100 transition">
 							<Facebook size={20} />
-						</a>
+						</a> */}
 						<a href="#" className="hover:opacity-100 transition">
 							<Instagram size={20} />
 						</a>
-						<a href="#" className="hover:opacity-100 transition">
+						{/* <a href="#" className="hover:opacity-100 transition">
 							<Twitter size={20} />
 						</a>
 						<a href="#" className="hover:opacity-100 transition">
 							<Linkedin size={20} />
-						</a>
+						</a> */}
 					</div>
 				</div>
 			</div>
