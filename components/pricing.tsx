@@ -2,6 +2,7 @@
 
 import pricingPlans from "@/lib/plans";
 import { Instagram } from "lucide-react";
+import Link from "next/link";
 
 export default function Pricing() {
 	return (
@@ -62,7 +63,10 @@ export default function Pricing() {
 									</li>
 								))}
 							</ul>
-							<button
+							<a
+								href="https://www.instagram.com/shaxlo_beauty_studio_ny"
+								target="_blank"
+								rel="noopener noreferrer"
 								className={`flex items-center justify-center w-full py-3 rounded-full font-semibold transition ${
 									plan.isPopular
 										? "bg-primary-foreground text-primary hover:bg-opacity-90"
@@ -70,7 +74,7 @@ export default function Pricing() {
 								}`}
 							>
 								Book via <Instagram className="mx-2" />
-							</button>
+							</a>
 						</div>
 					))}
 				</div>
