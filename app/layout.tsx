@@ -23,19 +23,19 @@ export const metadata: Metadata = {
 	icons: {
 		icon: [
 			{
-				url: "/owner.jpg",
+				url: "/icon.svg",
 				media: "(prefers-color-scheme: light)",
 			},
 			{
-				url: "/owner.jpg",
+				url: "/icon.svg",
 				media: "(prefers-color-scheme: dark)",
 			},
 			{
-				url: "/owner.jpg",
-				type: "image/jpg",
+				url: "/icon.svg",
+				type: "image/svg+xml",
 			},
 		],
-		apple: "/owner.jpg",
+		apple: "/icon.svg",
 	},
 };
 
