@@ -56,7 +56,7 @@ export default function Services() {
 								onClick={() => setActiveTab(index)}
 								className={`px-6 py-3 rounded-xl font-medium transition-all flex items-center gap-2 ${
 									activeTab === index
-										? "bg-primary text-primary-foreground shadow-lg scale-105"
+										? "bg-golden-gradient text-primary-foreground shadow-lg scale-105 shadow-[#C6A664]/25"
 										: "bg-card text-foreground/70 hover:bg-accent hover:text-white border border-border"
 								}`}
 							>
@@ -75,10 +75,10 @@ export default function Services() {
 						{services[activeTab].items.map((service, index) => (
 							<div
 								key={index}
-								className="bg-card border border-border rounded-xl p-5 hover:shadow-md hover:scale-[1.02] transition-all hover:border-primary/50 group"
+								className="bg-card border border-border rounded-xl p-5 hover:shadow-md hover:scale-[1.02] transition-all hover:border-[#C6A664]/50 group"
 							>
 								<div className="flex justify-between items-start gap-4">
-									<h4 className="text-foreground font-medium group-hover:text-primary transition-colors text-balance">
+									<h4 className="text-foreground font-medium group-hover:text-golden-gradient transition-colors text-balance">
 										{service.name}
 									</h4>
 									{/* <span className="font-bold text-primary text-lg whitespace-nowrap">

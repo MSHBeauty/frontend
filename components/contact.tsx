@@ -9,7 +9,13 @@ export default function Contact() {
 				<div className="grid md:grid-cols-2 gap-12 items-center">
 					{/* Left Image */}
 					<div className="relative hidden md:block">
-						<div className="absolute -left-10 top-1/2 -translate-y-1/2 w-80 h-80 bg-primary rounded-full -z-0"></div>
+						<div 
+							className="absolute -left-10 top-1/2 -translate-y-1/2 w-80 h-80 rounded-full -z-0"
+							style={{
+								background: "linear-gradient(135deg, #C6A664 0%, #E7D9A5 40%, #B08D34 80%, #82622F 100%)",
+								boxShadow: "0 6px 50px 0 rgba(198,166,100,0.25)",
+							}}
+						></div>
 						<div className="relative z-10 rounded-full overflow-hidden w-72 h-72 mx-auto">
 							<img
 								src="/owner.jpg"
@@ -70,14 +76,14 @@ export default function Contact() {
 							<p className="text-foreground/70 flex items-center gap-2">
 								<Link
 									href="tel:+9175339999"
-									className="hover:text-primary transition"
+									className="hover:text-golden-gradient transition"
 								>
 									+9175339999
 								</Link>{" "}
 								·{" "}
 								<Link
 									href="tel:+9295540000"
-									className="hover:text-primary transition"
+									className="hover:text-golden-gradient transition"
 								>
 									+9295540000
 								</Link>

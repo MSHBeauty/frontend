@@ -28,7 +28,7 @@ export default function Pricing() {
 							key={idx}
 							className={`relative rounded-3xl p-8 ${
 								plan.isPopular
-									? "bg-primary text-primary-foreground ring-4 ring-primary/20 transform md:scale-105"
+									? "bg-golden-gradient text-primary-foreground ring-4 ring-[#C6A664]/20 transform md:scale-105 shadow-lg shadow-[#C6A664]/25"
 									: "bg-card border-2 border-border text-foreground"
 							}`}
 						>
@@ -54,7 +54,7 @@ export default function Pricing() {
 											className={`w-5 h-5 rounded-full ${
 												plan.isPopular
 													? "bg-primary-foreground"
-													: "bg-primary"
+													: "bg-golden-gradient"
 											}`}
 										></span>
 										<span className="text-sm">
@@ -69,8 +69,8 @@ export default function Pricing() {
 								rel="noopener noreferrer"
 								className={`flex items-center justify-center w-full py-3 rounded-full font-semibold transition ${
 									plan.isPopular
-										? "bg-primary-foreground text-primary hover:bg-opacity-90"
-										: "bg-primary text-primary-foreground hover:bg-primary/90"
+										? "bg-primary-foreground text-golden-gradient hover:bg-opacity-90"
+										: "bg-golden-gradient text-primary-foreground hover:opacity-90 shadow-md shadow-[#C6A664]/20"
 								}`}
 							>
 								Book via <Instagram className="mx-2" />

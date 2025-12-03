@@ -4,7 +4,7 @@ import { Instagram } from "lucide-react";
 
 export default function Footer() {
 	return (
-		<footer className="bg-primary text-primary-foreground">
+		<footer className="bg-golden-gradient text-primary-foreground">
 			{/* Top Section */}
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
 				<div className="grid md:grid-cols-4 gap-8 mb-12">

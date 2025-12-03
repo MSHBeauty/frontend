@@ -28,7 +28,7 @@ export default function Gallery() {
 								key={img.id}
 								className={`relative h-64 rounded-3xl overflow-hidden cursor-pointer transition-all ${
 									idx === current
-										? "ring-4 ring-primary"
+										? "ring-4 ring-[#C6A664]"
 										: "opacity-60 hover:opacity-100"
 								}`}
 								onClick={() => setCurrent(idx)}
@@ -46,7 +46,7 @@ export default function Gallery() {
 					<div className="flex justify-center gap-4">
 						<button
 							onClick={handlePrev}
-							className="bg-primary text-primary-foreground p-3 rounded-full hover:bg-primary/90 transition"
+							className="bg-golden-gradient text-primary-foreground p-3 rounded-full hover:opacity-90 transition shadow-md shadow-[#C6A664]/20"
 						>
 							<ChevronLeft size={20} />
 						</button>
@@ -57,7 +57,7 @@ export default function Gallery() {
 									onClick={() => setCurrent(idx)}
 									className={`h-3 rounded-full transition-all ${
 										idx === current
-											? "bg-primary w-8"
+											? "bg-golden-gradient w-8"
 											: "bg-border w-3"
 									}`}
 								/>
@@ -65,7 +65,7 @@ export default function Gallery() {
 						</div>
 						<button
 							onClick={handleNext}
-							className="bg-primary text-primary-foreground p-3 rounded-full hover:bg-primary/90 transition"
+							className="bg-golden-gradient text-primary-foreground p-3 rounded-full hover:opacity-90 transition shadow-md shadow-[#C6A664]/20"
 						>
 							<ChevronRight size={20} />
 						</button>

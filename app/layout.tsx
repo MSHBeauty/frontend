@@ -1,11 +1,20 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Lora, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const lora = Lora({
+	subsets: ["latin", "cyrillic"],
+	variable: "--font-display",
+	display: "swap",
+});
+
+const inter = Inter({
+	subsets: ["latin", "cyrillic"],
+	variable: "--font-sans",
+	display: "swap",
+});
 
 export const metadata: Metadata = {
 	title: "Msh Beauty - Премиум Красота и Уход за Кожей",
@@ -47,7 +56,7 @@ export default function RootLayout({
 	return (
 		<html lang="ru">
 			<body
-				className={`font-sans antialiased ${_geist.className} ${_geistMono.className}`}
+				className={`${inter.variable} ${lora.variable} font-sans antialiased`}
 			>
 				{children}
 				<Analytics />

@@ -25,31 +25,31 @@ export default function Header() {
 					<div className="hidden md:flex items-center gap-8">
 						<a
 							href="#home"
-							className="text-foreground hover:text-primary transition"
+							className="text-foreground hover:text-golden-gradient transition"
 						>
 							Главная
 						</a>
 						<a
 							href="#services"
-							className="text-foreground hover:text-primary transition"
+							className="text-foreground hover:text-golden-gradient transition"
 						>
 							Услуги
 						</a>
 						<a
 							href="#about"
-							className="text-foreground hover:text-primary transition"
+							className="text-foreground hover:text-golden-gradient transition"
 						>
 							О нас
 						</a>
 						<a
 							href="#blog"
-							className="text-foreground hover:text-primary transition"
+							className="text-foreground hover:text-golden-gradient transition"
 						>
 							Блог
 						</a>
 						<a
 							href="#faq"
-							className="text-foreground hover:text-primary transition"
+							className="text-foreground hover:text-golden-gradient transition"
 						>
 							Вопросы
 						</a>
@@ -78,31 +78,31 @@ export default function Header() {
 					<div className="md:hidden mt-4 space-y-4 pb-4">
 						<a
 							href="#home"
-							className="block text-foreground hover:text-primary"
+							className="block text-foreground hover:text-golden-gradient"
 						>
 							Главная
 						</a>
 						<a
 							href="#services"
-							className="block text-foreground hover:text-primary"
+							className="block text-foreground hover:text-golden-gradient"
 						>
 							Услуги
 						</a>
 						<a
 							href="#about"
-							className="block text-foreground hover:text-primary"
+							className="block text-foreground hover:text-golden-gradient"
 						>
 							О нас
 						</a>
 						<a
 							href="#blog"
-							className="block text-foreground hover:text-primary"
+							className="block text-foreground hover:text-golden-gradient"
 						>
 							Блог
 						</a>
 						<a
 							href="#faq"
-							className="block text-foreground hover:text-primary"
+							className="block text-foreground hover:text-golden-gradient"
 						>
 							ЧаВо
 						</a>

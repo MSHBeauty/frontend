@@ -18,7 +18,9 @@ export default function Hero() {
 							<br />
 							СВОЙ ДЕНЬ С
 							<br />
-							<span className="text-primary">РОСКОШНЫМ</span>{" "}
+							<span className="text-golden-gradient">
+								РОСКОШНЫМ
+							</span>{" "}
 							УХОДОМ
 						</h1>
 
@@ -31,14 +33,14 @@ export default function Hero() {
 						<div className="flex flex-col sm:flex-row gap-4 items-start">
 							<Link
 								href="#contact"
-								className="bg-primary text-primary-foreground px-8 py-3 rounded-full font-semibold hover:bg-primary/90 transition inline-flex items-center gap-2"
+								className="bg-golden-gradient text-primary-foreground px-8 py-3 rounded-full font-semibold hover:opacity-90 transition inline-flex items-center gap-2 shadow-lg shadow-[#C6A664]/25"
 							>
 								Записаться на сеанс
 								<span className="text-xl">→</span>
 							</Link>
 							<Link
 								href="#services"
-								className="text-primary font-semibold hover:text-primary/80 transition"
+								className="text-golden-gradient font-semibold hover:opacity-80 transition"
 							>
 								Изучить услуги →
 							</Link>
@@ -47,7 +49,15 @@ export default function Hero() {
 
 					{/* Right Video */}
 					<div className="relative">
-						<div className="absolute -top-10 -right-10 w-80 h-80 bg-primary rounded-[3rem] -z-0"></div>
+						<div
+							className="absolute -top-10 -right-10 w-80 h-80 rounded-[3rem] z-0"
+							style={{
+								background:
+									"linear-gradient(135deg, #C6A664 0%, #E7D9A5 40%, #B08D34 80%, #82622F 100%)",
+								boxShadow:
+									"0 6px 50px 0 rgba(198,166,100,0.25)",
+							}}
+						></div>
 						<div className="relative z-10 rounded-[2.5rem] overflow-hidden">
 							<video
 								controls

@@ -58,14 +58,14 @@ export default function FAQ() {
 								<span
 									className={`text-lg font-semibold transition ${
 										open === idx
-											? "text-primary"
+											? "text-golden-gradient"
 											: "text-foreground"
 									}`}
 								>
 									{faq.question}
 								</span>
 								<span
-									className={`text-primary transition transform ${
+									className={`text-golden-gradient transition transform ${
 										open === idx ? "rotate-180" : ""
 									}`}
 								>
