@@ -92,7 +92,12 @@ export default function Footer() {
 						{/* <a href="#" className="hover:opacity-100 transition">
 							<Facebook size={20} />
 						</a> */}
-						<a href="#" className="hover:opacity-100 transition">
+						<a
+							href="https://www.instagram.com/shaxlo_beauty_studio_ny"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover:opacity-100 transition"
+						>
 							<Instagram size={20} />
 						</a>
 						{/* <a href="#" className="hover:opacity-100 transition">
