@@ -3,12 +3,15 @@
 import pricingPlans from "@/lib/plans";
 import { Instagram } from "lucide-react";
 import Link from "next/link";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 export default function Pricing() {
+	const titleRef = useScrollReveal();
+
 	return (
 		<section className="py-16 md:py-24 bg-background">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div className="text-center mb-16">
+				<div ref={titleRef as any} className="text-center mb-16 scroll-reveal">
 					<h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
 						ПОБАЛУЙТЕ СЕБЯ
 						<br />
@@ -26,11 +29,12 @@ export default function Pricing() {
 					{pricingPlans.map((plan, idx) => (
 						<div
 							key={idx}
-							className={`relative rounded-3xl p-8 ${
+							className={`relative rounded-3xl p-8 transition-all duration-300 hover:scale-105 ${
 								plan.isPopular
 									? "bg-golden-gradient text-primary-foreground ring-4 ring-[#C6A664]/20 transform md:scale-105 shadow-lg shadow-[#C6A664]/25"
-									: "bg-card border-2 border-border text-foreground"
-							}`}
+									: "bg-card border-2 border-border text-foreground hover:shadow-xl"
+							} animate-fade-in-up`}
+							style={{ animationDelay: `${idx * 0.1}s` }}
 						>
 							<h3
 								className={`font-bold text-lg mb-4 ${
@@ -67,7 +71,7 @@ export default function Pricing() {
 								href="https://www.instagram.com/shaxlo_beauty_studio_ny"
 								target="_blank"
 								rel="noopener noreferrer"
-								className={`flex items-center justify-center w-full py-3 rounded-full font-semibold transition ${
+								className={`flex items-center justify-center w-full py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 ${
 									plan.isPopular
 										? "bg-primary-foreground text-golden-gradient hover:bg-opacity-90"
 										: "bg-golden-gradient text-primary-foreground hover:opacity-90 shadow-md shadow-[#C6A664]/20"

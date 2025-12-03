@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 export default function Services() {
 	const [activeTab, setActiveTab] = useState(0);
+	const titleRef = useScrollReveal();
 
 	const services = [
 		{
@@ -44,7 +46,7 @@ export default function Services() {
 	return (
 		<section id="services" className="py-16 md:py-24 bg-background">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12 text-center text-balance">
+				<h2 ref={titleRef as any} className="text-4xl md:text-5xl font-bold text-foreground mb-12 text-center text-balance scroll-reveal">
 					Услуги и цены
 				</h2>
 
@@ -54,10 +56,10 @@ export default function Services() {
 							<button
 								key={index}
 								onClick={() => setActiveTab(index)}
-								className={`px-6 py-3 rounded-xl font-medium transition-all flex items-center gap-2 ${
+								className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 flex items-center gap-2 ${
 									activeTab === index
 										? "bg-golden-gradient text-primary-foreground shadow-lg scale-105 shadow-[#C6A664]/25"
-										: "bg-card text-foreground/70 hover:bg-accent hover:text-white border border-border"
+										: "bg-card text-foreground/70 hover:bg-accent hover:text-white hover:scale-105 border border-border"
 								}`}
 							>
 								<span className="text-xl">{category.icon}</span>
@@ -69,13 +71,14 @@ export default function Services() {
 					</div>
 
 					<div
-						className="grid md:grid-cols-2 gap-3 animate-in fade-in slide-in-from-bottom-4 duration-500"
+						className="grid md:grid-cols-2 gap-3"
 						key={activeTab}
 					>
 						{services[activeTab].items.map((service, index) => (
 							<div
 								key={index}
-								className="bg-card border border-border rounded-xl p-5 hover:shadow-md hover:scale-[1.02] transition-all hover:border-[#C6A664]/50 group"
+								className="bg-card border border-border rounded-xl p-5 hover:shadow-md hover:scale-[1.02] transition-all duration-300 hover:border-[#C6A664]/50 group animate-fade-in-up"
+								style={{ animationDelay: `${index * 0.05}s` }}
 							>
 								<div className="flex justify-between items-start gap-4">
 									<h4 className="text-foreground font-medium group-hover:text-golden-gradient transition-colors text-balance">

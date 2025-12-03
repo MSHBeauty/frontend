@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 export default function FAQ() {
 	const [open, setOpen] = useState(0);
+	const titleRef = useScrollReveal();
 
 	const faqs = [
 		{
@@ -33,7 +35,7 @@ export default function FAQ() {
 	return (
 		<section id="faq" className="py-16 md:py-24 bg-background">
 			<div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div className="text-center mb-16">
+				<div ref={titleRef as any} className="text-center mb-16 scroll-reveal">
 					<h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
 						ЧАСТО ЗАДАВАЕМЫЕ
 						<br />
@@ -49,11 +51,12 @@ export default function FAQ() {
 					{faqs.map((faq, idx) => (
 						<div
 							key={idx}
-							className="border-b-2 border-border pb-4"
+							className="border-b-2 border-border pb-4 animate-fade-in-up"
+							style={{ animationDelay: `${idx * 0.1}s` }}
 						>
 							<button
 								onClick={() => setOpen(open === idx ? -1 : idx)}
-								className="w-full flex items-center justify-between py-4 text-left group"
+								className="w-full flex items-center justify-between py-4 text-left group hover:opacity-80 transition-opacity"
 							>
 								<span
 									className={`text-lg font-semibold transition ${
@@ -74,7 +77,7 @@ export default function FAQ() {
 							</button>
 
 							{open === idx && (
-								<div className="pb-4 text-foreground/70 leading-relaxed">
+								<div className="pb-4 text-foreground/70 leading-relaxed animate-fade-in-down">
 									{faq.answer}
 								</div>
 							)}

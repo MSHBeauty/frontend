@@ -1,22 +1,26 @@
 "use client";
 
 import Link from "next/link";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 export default function Contact() {
+	const leftRef = useScrollReveal();
+	const rightRef = useScrollReveal();
+
 	return (
 		<section className="py-16 md:py-24 bg-background" id="contact">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="grid md:grid-cols-2 gap-12 items-center">
 					{/* Left Image */}
-					<div className="relative hidden md:block">
+					<div ref={leftRef as any} className="relative hidden md:block scroll-reveal-left">
 						<div 
-							className="absolute -left-10 top-1/2 -translate-y-1/2 w-80 h-80 rounded-full -z-0"
+							className="absolute -left-10 top-1/2 -translate-y-1/2 w-80 h-80 rounded-full -z-0 animate-float"
 							style={{
 								background: "linear-gradient(135deg, #C6A664 0%, #E7D9A5 40%, #B08D34 80%, #82622F 100%)",
 								boxShadow: "0 6px 50px 0 rgba(198,166,100,0.25)",
 							}}
 						></div>
-						<div className="relative z-10 rounded-full overflow-hidden w-72 h-72 mx-auto">
+						<div className="relative z-10 rounded-full overflow-hidden w-72 h-72 mx-auto animate-scale-in">
 							<img
 								src="/owner.jpg"
 								alt="Contact"
@@ -26,7 +30,7 @@ export default function Contact() {
 					</div>
 
 					{/* Right Form */}
-					<div>
+					<div ref={rightRef as any} className="scroll-reveal-right">
 						<h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
 							СВЯЖИТЕСЬ С НАМИ
 							<br />
@@ -49,7 +53,7 @@ export default function Contact() {
 								rel="noopener noreferrer"
 								className="flex items-center gap-4 group"
 							>
-								<div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] flex items-center justify-center transition-transform group-hover:scale-110">
+								<div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										fill="white"
