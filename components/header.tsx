@@ -1,11 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useTransition } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Header() {
 	const [isOpen, setIsOpen] = useState(false);
+	const t = useTranslations("Header");
+	const [pending, startTransition] = useTransition();
+	const locale = useLocale() as "ru" | "en";
+
+	const setLocale = (locale: "ru" | "en") => {
+		document.cookie = `locale=${locale}; path=/; max-age=31536000`;
+		startTransition(() => {
+			window.location.reload();
+		});
+	};
 
 	return (
 		<header className="sticky top-0 z-50 bg-background border-b border-border">
@@ -23,36 +34,58 @@ export default function Header() {
 
 					{/* Desktop Menu */}
 					<div className="hidden md:flex items-center gap-8">
-						<a
-							href="#home"
-							className="text-foreground hover:text-golden-gradient transition"
-						>
-							Главная
-						</a>
-						<a
-							href="#services"
-							className="text-foreground hover:text-golden-gradient transition"
-						>
-							Услуги
-						</a>
-						<a
-							href="#about"
-							className="text-foreground hover:text-golden-gradient transition"
-						>
-							О нас
-						</a>
-						<a
-							href="#blog"
-							className="text-foreground hover:text-golden-gradient transition"
-						>
-							Блог
-						</a>
-						<a
-							href="#faq"
-							className="text-foreground hover:text-golden-gradient transition"
-						>
-							Вопросы
-						</a>
+						<nav className="flex items-center gap-8">
+							<a
+								href="#home"
+								className="text-foreground hover:text-golden-gradient transition"
+							>
+								{t("home")}
+							</a>
+							<a
+								href="#services"
+								className="text-foreground hover:text-golden-gradient transition"
+							>
+								{t("services")}
+							</a>
+							<a
+								href="#about"
+								className="text-foreground hover:text-golden-gradient transition"
+							>
+								{t("about")}
+							</a>
+							<a
+								href="#blog"
+								className="text-foreground hover:text-golden-gradient transition"
+							>
+								{t("blog")}
+							</a>
+							<a
+								href="#faq"
+								className="text-foreground hover:text-golden-gradient transition"
+							>
+								{t("faq")}
+							</a>
+						</nav>
+						<div className="flex items-center gap-1 rounded-full bg-muted px-1 py-0.5 text-xs font-medium">
+							<button
+								type="button"
+								onClick={() => setLocale("ru")}
+								disabled={pending}
+								className="px-2 py-1 rounded-full data-[active=true]:bg-golden-gradient data-[active=true]:text-primary-foreground transition-colors"
+								data-active={locale === "ru"}
+							>
+								RU
+							</button>
+							<button
+								type="button"
+								onClick={() => setLocale("en")}
+								disabled={pending}
+								className="px-2 py-1 rounded-full data-[active=true]:bg-golden-gradient data-[active=true]:text-primary-foreground transition-colors"
+								data-active={locale === "en"}
+							>
+								EN
+							</button>
+						</div>
 					</div>
 
 					{/* <div className="hidden md:flex items-center gap-4">
@@ -80,32 +113,51 @@ export default function Header() {
 							href="#home"
 							className="block text-foreground hover:text-golden-gradient"
 						>
-							Главная
+							{t("home")}
 						</a>
 						<a
 							href="#services"
 							className="block text-foreground hover:text-golden-gradient"
 						>
-							Услуги
+							{t("services")}
 						</a>
 						<a
 							href="#about"
 							className="block text-foreground hover:text-golden-gradient"
 						>
-							О нас
+							{t("about")}
 						</a>
 						<a
 							href="#blog"
 							className="block text-foreground hover:text-golden-gradient"
 						>
-							Блог
+							{t("blog")}
 						</a>
 						<a
 							href="#faq"
 							className="block text-foreground hover:text-golden-gradient"
 						>
-							ЧаВо
+							{t("faq")}
 						</a>
+
+						<div className="flex items-center gap-2 pt-2">
+							<button
+								type="button"
+								onClick={() => setLocale("ru")}
+								disabled={pending}
+								className="px-3 py-1 rounded-full border border-border text-xs font-medium hover:bg-golden-gradient hover:text-primary-foreground transition-colors"
+							>
+								RU
+							</button>
+							<button
+								type="button"
+								onClick={() => setLocale("en")}
+								disabled={pending}
+								className="px-3 py-1 rounded-full border border-border text-xs font-medium hover:bg-golden-gradient hover:text-primary-foreground transition-colors"
+							>
+								EN
+							</button>
+						</div>
 					</div>
 				)}
 			</nav>

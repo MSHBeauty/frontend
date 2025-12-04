@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import { useScrollReveal } from "@/lib/useScrollReveal";
+import { useTranslations } from "next-intl";
 
 export default function Contact() {
 	const leftRef = useScrollReveal();
 	const rightRef = useScrollReveal();
+	const t = useTranslations("Contact");
 
 	return (
 		<section className="py-16 md:py-24 bg-background" id="contact">
@@ -32,19 +34,17 @@ export default function Contact() {
 					{/* Right Form */}
 					<div ref={rightRef as any} className="scroll-reveal-right">
 						<h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-							СВЯЖИТЕСЬ С НАМИ
+							{t("titleLine1")}
 							<br />
-							СЕГОДНЯ!
+							{t("titleLine2")}
 						</h2>
 						<p className="text-lg text-foreground/70 mb-8">
-							Наша команда экспертов предоставляет первоклассные
-							услуги с использованием премиальных продуктов.
+							{t("description")}
 						</p>
 
 						<div className="flex flex-col items-start gap-6">
 							<p className="text-lg text-foreground/70">
-								Для записи и вопросов, пожалуйста, свяжитесь с
-								нами в Instagram.
+								{t("ctaText")}
 							</p>
 
 							<a
@@ -65,7 +65,7 @@ export default function Contact() {
 								</div>
 
 								<span className="text-xl font-semibold text-foreground group-hover:underline">
-									Shaxlo beauty studio NY
+									{t("instagramName")}
 								</span>
 							</a>
 						</div>
@@ -73,8 +73,7 @@ export default function Contact() {
 						<div className="mt-8 pt-8 border-t border-border space-y-2 text-sm">
 							<p>
 								<strong>
-									1662 Coney Island Avenue Brooklyn New York
-									11230
+									{t("address")}
 								</strong>
 							</p>
 							<p className="text-foreground/70 flex items-center gap-2">

@@ -1,8 +1,11 @@
 "use client";
 
 import { Instagram } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+	const t = useTranslations("Footer");
+
 	return (
 		<footer className="bg-golden-gradient text-primary-foreground">
 			{/* Top Section */}
@@ -21,22 +24,22 @@ export default function Footer() {
 							></div>
 						</div>
 						<p className="text-sm opacity-90">
-							Преобразите свою рутину красоты с нашими
-							премиальными услугами по уходу за кожей и
-							оздоровлению.
+							{t("description")}
 						</p>
 					</div>
 
 					{/* Quick Links */}
 					<div>
-						<h4 className="font-bold mb-4">Быстрые ссылки</h4>
+						<h4 className="font-bold mb-4">
+							{t("quickLinks")}
+						</h4>
 						<ul className="space-y-2 text-sm opacity-90">
 							<li>
 								<a
 									href="#home"
 									className="hover:opacity-100 transition"
 								>
-									Главная
+									{t("linkHome")}
 								</a>
 							</li>
 							<li>
@@ -44,7 +47,7 @@ export default function Footer() {
 									href="#services"
 									className="hover:opacity-100 transition"
 								>
-									Услуги
+									{t("linkServices")}
 								</a>
 							</li>
 							<li>
@@ -52,7 +55,7 @@ export default function Footer() {
 									href="#home"
 									className="hover:opacity-100 transition"
 								>
-									О нас
+									{t("linkAbout")}
 								</a>
 							</li>
 							<li>
@@ -60,22 +63,20 @@ export default function Footer() {
 									href="#contact"
 									className="hover:opacity-100 transition"
 								>
-									Контакты
+									{t("linkContact")}
 								</a>
 							</li>
 						</ul>
 					</div>
 
-					{/* Services */}
 					{/* Hours */}
 					<div>
-						<h4 className="font-bold mb-4">Часы работы</h4>
+						<h4 className="font-bold mb-4">
+							{t("hoursTitle")}
+						</h4>
 						<ul className="space-y-2 text-sm opacity-90">
-							<li>Понедельник-Пятница: 10:00 - 18:00</li>
-							<li>
-								Выходные дни: 10:00 - 18:00 (часы могут
-								меняться)
-							</li>
+							<li>{t("hoursWeekdays")}</li>
+							<li>{t("hoursWeekend")}</li>
 						</ul>
 					</div>
 				</div>
@@ -84,14 +85,11 @@ export default function Footer() {
 				<div className="border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
 					{/* Left */}
 					<div className="text-sm opacity-90">
-						<p>© 2025 Msh Beauty. Все права защищены.</p>
+						<p>{t("copyright")}</p>
 					</div>
 
 					{/* Social Icons */}
 					<div className="flex gap-4">
-						{/* <a href="#" className="hover:opacity-100 transition">
-							<Facebook size={20} />
-						</a> */}
 						<a
 							href="https://www.instagram.com/shaxlo_beauty_studio_ny"
 							target="_blank"
@@ -100,12 +98,6 @@ export default function Footer() {
 						>
 							<Instagram size={20} />
 						</a>
-						{/* <a href="#" className="hover:opacity-100 transition">
-							<Twitter size={20} />
-						</a>
-						<a href="#" className="hover:opacity-100 transition">
-							<Linkedin size={20} />
-						</a> */}
 					</div>
 				</div>
 			</div>

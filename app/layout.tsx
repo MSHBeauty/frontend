@@ -2,6 +2,8 @@ import type React from "react";
 import type { Metadata } from "next";
 import { Lora, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
 import "./globals.css";
 
 const lora = Lora({
@@ -48,19 +50,25 @@ export const metadata: Metadata = {
 	},
 };
 
-export default function RootLayout({
+export default async function RootLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	const locale = await getLocale();
+	const messages = await getMessages();
+
 	return (
-		<html lang="ru">
+		<html lang={locale}>
 			<body
 				className={`${inter.variable} ${lora.variable} font-sans antialiased`}
 			>
-				{children}
-				<Analytics />
+				<NextIntlClientProvider locale={locale} messages={messages}>
+					{children}
+					<Analytics />
+				</NextIntlClientProvider>
 			</body>
 		</html>
 	);
 }
+

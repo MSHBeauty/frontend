@@ -3,10 +3,12 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import { useScrollReveal } from "@/lib/useScrollReveal";
+import { useTranslations } from "next-intl";
 
 export default function Gallery() {
 	const [current, setCurrent] = useState(0);
 	const galleryRef = useScrollReveal();
+	const t = useTranslations("Gallery");
 
 	const images = [
 		{
@@ -31,7 +33,7 @@ export default function Gallery() {
 		<section className="py-16 md:py-24 bg-background">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12 text-center">
-					Галерея
+					{t("title")}
 				</h2>
 				<div ref={galleryRef as any} className="relative">
 					{/* Gallery Grid */}

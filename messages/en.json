@@ -1,0 +1,111 @@
+{
+	"Header": {
+		"home": "Home",
+		"services": "Services",
+		"about": "About",
+		"blog": "Blog",
+		"faq": "FAQ"
+	},
+	"Hero": {
+		"badge": "✨ Best choice of 2024 - Vogue selection",
+		"titleLine1": "TRANSFORM",
+		"titleLine2": "YOUR DAY WITH",
+		"titleLine3": "LUXURIOUS CARE",
+		"description": "At Msh Beauty, our premium skincare will help you become even more beautiful, highlight the best in your skin and leave you confident and glowing.",
+		"ctaPrimary": "Book a session",
+		"ctaSecondary": "Explore services →",
+		"play": "Play",
+		"pause": "Pause",
+		"mute": "Mute",
+		"unmute": "Unmute"
+	},
+	"Services": {
+		"title": "Services & Pricing",
+		"categories": {
+			"facials": {
+				"title": "Facial Treatments & Peels",
+				"items": {
+					"classic": "Classic facial treatment",
+					"deepClean": "Deep cleansing facial treatment",
+					"antiAging": "Anti-aging facial treatment",
+					"seasonalPeel": "Seasonal facial peel",
+					"carboxy": "Carboxytherapy",
+					"mandelic": "Mandelic peel",
+					"yellow": "Yellow peel"
+				}
+			},
+			"laser": {
+				"title": "Laser Treatments",
+				"items": {
+					"fullBodyLaser": "Laser hair removal - Full body",
+					"morpheus": "Morpheus8 - Skin & face lifting",
+					"endosphere": "Endosphere therapy - Full body",
+					"co2": "CO2 Laser - Skin resurfacing",
+					"emsella": "Intimate chair - Emsella",
+					"couperose": "Couperose removal - Full face",
+					"tattoo": "Tattoo removal - Brows",
+					"carbonPeel": "Carbon laser peel",
+					"cavitation": "Fat cavitation for abdomen",
+					"papilloma": "Papilloma removal",
+					"whitening": "Teeth whitening"
+				}
+			}
+		}
+	},
+	"Gallery": {
+		"title": "Gallery"
+	},
+	"Pricing": {
+		"titleLine1": "INDULGE YOURSELF",
+		"titleLine2": "AT ANY BUDGET",
+		"description": "Our team of experts provides top-tier services using premium products to deliver stunning results.",
+		"bookViaInstagram": "Book via"
+	},
+	"Contact": {
+		"titleLine1": "CONTACT US",
+		"titleLine2": "TODAY!",
+		"description": "Our team of experts provides top-tier services using premium products.",
+		"ctaText": "For bookings and inquiries, please contact us on Instagram.",
+		"instagramName": "Shaxlo beauty studio NY",
+		"address": "1662 Coney Island Avenue Brooklyn New York 11230"
+	},
+	"FAQ": {
+		"titleLine1": "FREQUENTLY ASKED",
+		"titleLine2": "QUESTIONS",
+		"description": "Our expert team answers the most common questions.",
+		"items": {
+			"services": {
+				"q": "What services do you offer?",
+				"a": "We provide a wide range of beauty and skincare services, including facials, hydration, brightening treatments and more, using premium products."
+			},
+			"booking": {
+				"q": "How can I book an appointment?",
+				"a": "You can book an appointment through our website, call us directly, or visit our studio. We offer flexible scheduling options."
+			},
+			"safety": {
+				"q": "Are your products safe for sensitive skin?",
+				"a": "Yes, all our products are dermatologist-tested and suitable for all skin types, including sensitive skin. We use only premium-quality products."
+			},
+			"giftCards": {
+				"q": "Do you offer gift cards?",
+				"a": "Yes, we offer gift cards for all of our services. They make a perfect gift for friends and family."
+			},
+			"cancellation": {
+				"q": "What is your cancellation policy?",
+				"a": "Cancellations made 24 hours in advance receive a full refund. Late cancellations may be subject to a fee."
+			}
+		}
+	},
+	"Footer": {
+		"description": "Elevate your beauty routine with our premium skincare and wellness services.",
+		"quickLinks": "Quick links",
+		"linkHome": "Home",
+		"linkServices": "Services",
+		"linkAbout": "About",
+		"linkContact": "Contact",
+		"hoursTitle": "Opening hours",
+		"hoursWeekdays": "Monday–Friday: 10:00 - 18:00",
+		"hoursWeekend": "Weekends: 10:00 - 18:00 (hours may vary)",
+		"copyright": "© 2025 Msh Beauty. All rights reserved."
+	}
+}

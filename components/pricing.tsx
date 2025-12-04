@@ -4,23 +4,23 @@ import pricingPlans from "@/lib/plans";
 import { Instagram } from "lucide-react";
 import Link from "next/link";
 import { useScrollReveal } from "@/lib/useScrollReveal";
+import { useTranslations } from "next-intl";
 
 export default function Pricing() {
 	const titleRef = useScrollReveal();
+	const t = useTranslations("Pricing");
 
 	return (
 		<section className="py-16 md:py-24 bg-background">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div ref={titleRef as any} className="text-center mb-16 scroll-reveal">
 					<h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-						ПОБАЛУЙТЕ СЕБЯ
+						{t("titleLine1")}
 						<br />
-						ПРИ ЛЮБОМ БЮДЖЕТЕ
+						{t("titleLine2")}
 					</h2>
 					<p className="text-lg text-foreground/70">
-						Наша команда экспертов предоставляет первоклассные
-						услуги с использованием премиальных продуктов для
-						достижения потрясающих результатов.
+						{t("description")}
 					</p>
 				</div>
 
@@ -77,7 +77,8 @@ export default function Pricing() {
 										: "bg-golden-gradient text-primary-foreground hover:opacity-90 shadow-md shadow-[#C6A664]/20"
 								}`}
 							>
-								Book via <Instagram className="mx-2" />
+								{t("bookViaInstagram")}{" "}
+								<Instagram className="mx-2" />
 							</a>
 						</div>
 					))}

@@ -3,8 +3,10 @@
 import Link from "next/link";
 import { useScrollReveal } from "@/lib/useScrollReveal";
 import { useState, useRef, useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
+	const t = useTranslations("Hero");
 	const leftRef = useScrollReveal();
 	const rightRef = useScrollReveal();
 	const videoRef = useRef<HTMLVideoElement>(null);
@@ -46,24 +48,21 @@ export default function Hero() {
 						className="z-10 animate-fade-in-left"
 					>
 						<div className="inline-block bg-muted px-4 py-2 rounded-full text-sm font-medium text-foreground mb-6 animate-fade-in-down">
-							✨ Лучший выбор 2024 года - Выбор Vogue
+							{t("badge")}
 						</div>
 
 						<h1 className="text-5xl md:text-6xl font-bold text-foreground leading-tight mb-6">
-							ПРЕОБРАЗИТЕ
+							{t("titleLine1")}
 							<br />
-							СВОЙ ДЕНЬ С
+							{t("titleLine2")}
 							<br />
 							<span className="text-golden-gradient">
-								РОСКОШНЫМ
+								{t("titleLine3")}
 							</span>{" "}
-							УХОДОМ
 						</h1>
 
 						<p className="text-lg text-foreground/70 mb-8 leading-relaxed max-w-lg">
-							В Msh Beauty наш премиум-уход за кожей поможет вам
-							стать еще красивее, подчеркнуть лучшее в вашей коже
-							и оставить вас уверенными и сияющими.
+							{t("description")}
 						</p>
 
 						<div className="flex flex-col sm:flex-row gap-4 items-start">
@@ -71,7 +70,7 @@ export default function Hero() {
 								href="#contact"
 								className="bg-golden-gradient text-primary-foreground px-8 py-3 rounded-full font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 inline-flex items-center gap-2 shadow-lg shadow-[#C6A664]/25 hover:shadow-xl hover:shadow-[#C6A664]/40"
 							>
-								Записаться на сеанс
+								{t("ctaPrimary")}
 								<span className="text-xl transition-transform inline-block group-hover:translate-x-1">
 									→
 								</span>
@@ -127,7 +126,7 @@ export default function Hero() {
 									}}
 									className="bg-black/70 hover:bg-black/90 backdrop-blur-sm text-white p-3 rounded-full transition-all duration-200 hover:scale-110"
 									aria-label={
-										isPlaying ? "Пауза" : "Воспроизвести"
+										isPlaying ? t("pause") : t("play")
 									}
 								>
 									{isPlaying ? (
@@ -165,9 +164,7 @@ export default function Hero() {
 									}}
 									className="bg-black/70 hover:bg-black/90 backdrop-blur-sm text-white p-3 rounded-full transition-all duration-200 hover:scale-110"
 									aria-label={
-										isMuted
-											? "Включить звук"
-											: "Выключить звук"
+										isMuted ? t("unmute") : t("mute")
 									}
 								>
 									{isMuted ? (
