@@ -1,7 +1,6 @@
 import type React from "react";
 import type { Metadata } from "next";
 import { Lora, Inter } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import "./globals.css";
@@ -65,10 +64,8 @@ export default async function RootLayout({
 			>
 				<NextIntlClientProvider locale={locale} messages={messages}>
 					{children}
-					<Analytics />
 				</NextIntlClientProvider>
 			</body>
 		</html>
 	);
 }
-
