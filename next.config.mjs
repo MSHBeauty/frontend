@@ -4,10 +4,7 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	experimental: {
-		optimizeCss: false,
-		turbo: false,
-	},
+	output: "standalone",
 	eslint: {
 		ignoreDuringBuilds: true,
 	},
