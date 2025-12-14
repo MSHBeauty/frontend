@@ -19,8 +19,22 @@
 		"mute": "Mute",
 		"unmute": "Unmute"
 	},
+	"About": {
+		"titleLine1": "REDEFINING",
+		"titleLine2": "BEAUTY STANDARDS",
+		"description": "At Msh Beauty, we believe that beauty is a form of self-expression and confidence.",
+		"paragraph1": "Our clinic offers a comprehensive range of advanced aesthetic treatments designed to enhance your natural beauty and boost your confidence. With state-of-the-art technology and a team of experienced professionals, we provide personalized treatment plans that deliver exceptional results.",
+		"paragraph2": "We believe that every person deserves to feel their absolute best. That's why we've dedicated ourselves to mastering the latest techniques and technologies in aesthetic medicine, ensuring that each client receives treatments that are not only effective but also safe and comfortable.",
+		"benefit1Title": "Expert Care",
+		"benefit1Description": "Certified professionals with years of experience in beauty and skincare treatments.",
+		"benefit2Title": "Advanced Technology",
+		"benefit2Description": "Latest equipment and proven treatment methods for the best results.",
+		"benefit3Title": "Personalized Approach",
+		"benefit3Description": "Customized treatments tailored to your unique needs and skin type."
+	},
 	"Services": {
-		"title": "Services & Pricing",
+		"title": "OUR TREATMENTS",
+		"subtitle": "Professional beauty and aesthetic treatments tailored to your needs",
 		"categories": {
 			"facials": {
 				"title": "Facial Treatments & Peels",
@@ -55,19 +69,71 @@
 	"Gallery": {
 		"title": "Gallery"
 	},
+	"Instagram": {
+		"title": "FOLLOW OUR JOURNEY",
+		"description": "See our latest work and client transformations",
+		"followText": "@shaxlo_beauty_studio_ny"
+	},
 	"Pricing": {
 		"titleLine1": "INDULGE YOURSELF",
 		"titleLine2": "AT ANY BUDGET",
 		"description": "Our team of experts provides top-tier services using premium products to deliver stunning results.",
-		"bookViaInstagram": "Book via"
+		"bookViaInstagram": "Book via",
+		"plans": [
+			{
+				"title": "FACIAL TREATMENTS & PEELS",
+				"price": "$100",
+				"features": [
+					"Facial treatments (3 types) – $100–$300",
+					"Seasonal facial peel – $100",
+					"Carboxytherapy – $100",
+					"Mandelic peel – $150",
+					"Yellow peel – $150"
+				]
+			},
+			{
+				"title": "PREMIUM EQUIPMENT",
+				"price": "$250",
+				"features": [
+					"Morpheus8 (Face lifting) – $400",
+					"CO2 Laser (Skin resurfacing) – $500",
+					"Intimate chair (Emsella) – $300",
+					"Couperose removal – $250",
+					"Endosphere therapy – $150"
+				]
+			},
+			{
+				"title": "LASER & BODY",
+				"price": "$100",
+				"features": [
+					"Laser hair removal – $150",
+					"Carbon peel – $100",
+					"Fat reduction cavitation – $150",
+					"Teeth whitening – $100",
+					"Tattoo removal – from $100",
+					"Papilloma removal – $10/piece"
+				]
+			}
+		]
+	},
+	"Location": {
+		"title": "OUR LOCATION",
+		"address": "1662 Coney Island Avenue, Brooklyn, New York 11230",
+		"viewOnMap": "View on Google Maps"
 	},
 	"Contact": {
-		"titleLine1": "CONTACT US",
-		"titleLine2": "TODAY!",
-		"description": "Our team of experts provides top-tier services using premium products.",
+		"titleLine1": "BOOK YOUR",
+		"titleLine2": "CONSULTATION",
+		"description": "Ready to begin your beauty journey? Contact us today.",
 		"ctaText": "For bookings and inquiries, please contact us on Instagram.",
 		"instagramName": "Shaxlo beauty studio NY",
-		"address": "1662 Coney Island Avenue Brooklyn New York 11230"
+		"phoneLabel": "Phone",
+		"emailLabel": "Email",
+		"addressLabel": "Address",
+		"address": "1662 Coney Island Avenue, Brooklyn, New York 11230",
+		"hoursTitle": "Business Hours",
+		"hoursWeekdays": "Monday–Friday: 10:00 AM - 6:00 PM",
+		"hoursWeekend": "Weekends: 10:00 AM - 6:00 PM (hours may vary)"
 	},
 	"FAQ": {
 		"titleLine1": "FREQUENTLY ASKED",
